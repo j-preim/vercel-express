@@ -15,7 +15,7 @@ app.use(
 );
 
 app.get("/schedule", function (req, res) {
-  res.status(200).json({ success: true });
+  res.sendFile(path.join(__dirname, "..", "static", "initSched.json"));
 });
 
 app.post("/test-cors-post", function (req, res) {
