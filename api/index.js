@@ -14,7 +14,7 @@ app.use(
   })
 );
 
-app.get("/", function (req, res) {
+app.get("/schedule", function (req, res) {
   res.status(200).json({ success: true });
 });
 
