@@ -10,11 +10,11 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:3000", "https://rrv7.vercel.app"],
+    origin: ["http://localhost:3000", "https://api.sportradar.us/ncaamb/trial/v8/en/tournaments/56befd3f-4024-47c4-900f-892883cc1b6b/schedule.json?api_key=luKiaKnnuM5AyqYEimwuW2YnoRK9ks4F6wYPP307"],
   })
 );
 
-app.get("/test-cors-get", function (req, res) {
+app.get("/", function (req, res) {
   res.status(200).json({ success: true });
 });
 
